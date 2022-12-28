@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<style type="text/css">
+		.yazi{
+			color: red;
+			font-family: Verdana;
+			font-size: 10px; /*yazı büyüklüğü*/	
+			font-weight: 800; /*Bolt-kalınlık büyüklüğü*/
+			word-spacing: 1cm ; /*Kelime arası boşluk  1cm veya 1px*/
+			letter-spacing: 0.3cm;  /*Harfler arası boşluk*/
+		}
+		.metinStil{
+
+			text-decoration: none; /*Altında Çizgi oluşturmayı iptal etme / none yerine underline yazarsak çizgi oluşur*/
+			
+		}
+
+		.büyüt{
+			text-transform: uppercase; /*Yazı Boyutu büyütme yada tam tersi lowercase ile yazı boyutu küçülür*/
+		}
+
+		.büyütilkharf{
+			text-transform: capitalize;
+		}
+	</style>
+
+</head>
+<body>
+
+<p class="yazi">Deneme Metni</p>
+<p > <a class="metinStil" href="">Buraya Tıklyınız</a> </p>
+
+<p class="büyüt"> css dersleri</p> <!-- Üstteki Uppercase sayesinde bütün yazıyı büyüttü  -->
+
+<p class="büyütilkharf">İlk HArfleri büyüt</p>
+
+<p style="text-indent: 10px; line-height: 30px;">DENEME METNİ DENEME METNİ DENEME METNİ <!-- Bu sayede paragraf başı gibi boşluk ayarlanabilri/line-heigh ile satır sarası boşluk cm yada pc belirlenebilir -->
+DENEME METNİ
+DENEME METNİ DENEME METNİ DENEME METNİ</p>
+
+
+</body>
+</html>

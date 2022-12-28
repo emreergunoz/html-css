@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	display-inline kullanırsak paddding ve margin verilebilir-genişlik ve yükseklik - paddingoluşturulan html bileşeni ve içindeki matin arsıdndaki boşluk
+
+	<style >
+		span.a{ /*Padding ve öargin verilebirli*/
+			display: inline;
+			width: 100px;
+			height: 100px;
+			padding: 20;
+			margin: 10;
+			border: 1px solid-blue;
+			background-color: yellow;
+		}
+		span.b{ /*spanlar aynı satırda yazılabilir*/
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			padding: 5px;
+			border: 1px solid-blue;
+			background-color: yellow;
+		}
+		span.c{ /*span etiketi bu şekilde alt alta yazılır daha doğrusu satırı kaplar*/
+			display: block;
+			width: 100px;
+			height: 100px;
+			padding: 20;
+			margin: 10;
+			border: 1px solid-blue;
+			background-color: yellow;
+		}
+	</style>
+
+</head>
+<body>
+inline etiket siz ekeliğinizde yan yana eklenir. Span, a,i vb etiketelerdir.
+Block etiketler ise yazıldığında satırı kaplarlar. Yan yana yazılmazlar. div,p,ul,li vb.
+
+<h2>İnline Etiket</h2>
+<a href="#">1. Etiket</a>
+<a href="#">1. Etiket</a><a href="#">1. Etiket</a>
+
+<span class="a">Etiket1</span>
+<span class="b">Etiket1</span>
+<span class="c">Etiket1</span>
+
+<h2>Block Etiket</h2>
+
+<div>Div Etiket</div>
+<div>Div Etiket</div>
+<div>Div Etiket</div>
+ Alt Alta yazıldılar ama şu şekilde yazlırsa aynı satırdada yazılabilir
+
+ <div style="display: inline-block;">Div Etiket yan yana</div>
+ <div style="display: inline-block;">Div Etiket yan yana</div>
+ <div style="display: inline-block;">Div Etiket yan yana</div>
+</body>
+</html>
+
+
+

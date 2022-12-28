@@ -1,0 +1,10 @@
+/*Başka htmlde kullanmak için hazır style oluşturuyoruz*/
+.renklendir{
+	color: blue;
+	font-size: 30px;
+	font-family: "Times New Roman" ,"serif","Calibri";/*Ekleyeceğiniz bilgisyarda times new roman yoksa 2. Tercihi alcak*/
+}
+
+.italik{
+	font-size: italik;
+}

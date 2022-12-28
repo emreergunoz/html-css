@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Diziler</title>
+</head>
+<body>
+	
+	<script>
+	
+	  var marka = ["Opel","Toyota","Mazda","Renault","BMW"];
+	  var model = new Array("Corsa","Yaris","CX-3","Clio");	
+
+	  console.log(marka[2]);
+	  console.log(model[2]);
+		
+	  model[0]="Astra";
+		
+	  console.log(model);
+		
+		
+	  var auris = ["Toyota","Auris",42,true];		
+	  auris.push('blue'); // dizinin sonuna yeni bir eleman ekler
+	  auris.unshift('HB'); // dizinin başına yeni bir eleman ekler.
+	  auris.pop(); // dizinin son elemanını çıkarır
+	  auris.shift(); // dizinin ilk elemanını çıkarır 
+		
+	  console.log(auris);
+		
+		
+	 for(var i=0; i<marka.length;i++){
+		 console.log(marka[i]);
+	 }	
+		
+	 if(marka.indexOf('Mercedes')!==-1){
+		 console.log("bulundu");
+	 }	else{
+		 console.log("aranılan kelime bulunamadı");
+	 }
+	 console.log(marka.indexOf('Mercedes'))
+	 console.log(marka.indexOf('Mazda'))
+	 	
+	
+	</script>
+	
+	
+	
+</body>
+</html>

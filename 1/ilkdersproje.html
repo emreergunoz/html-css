@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Merhaba</title>
+	<meta name="decription" content="Html,açıklamalar">
+	<meta name="keyword" content="html,css,java">
+	<meta name="auther" content="Emre">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!--<meta http-equiv="refresh" content="30">-->
+</head>
+
+<body>
+	<form action="nereye.html" method="get" target="_blanck"><!-- get yada post kullan, get kullanırsan bilgi adres çubuğunda gözükür,post ise taşınan bilgiyi göstermez-->
+
+		<table border="1" align="center"  ><!-- Table knarlarını oluşturduk ve ortaya atadırk-->
+		<tr><td>
+			<table>
+			<tr><th colspan="3" align="center" style="font-size:25px" ><u>Beyazsakal Tayfaya Alım</u></th></tr> <!-- th tablo başlığı olduğundan bolt olır-->
+			<tr><td>Fotograf</td>
+				<td>:</td>
+				<td><img src="wbp.png" width="165" height="80" ></td></tr>	
+			<tr><td>İsim</td>
+				<td>:</td>
+				<td><input type="text" name="isim" placeholder="İsim Giriniz" autofocus="" value="Emre Ergün" readonly=""></td></tr><!--Place yerine value ile içerisine otomatik emre ergün yazdırdık /readonly ile yazılı şey değiştirilemez-->
+
+			<tr><td>Soyisim</td>
+				<td>:</td>
+				<td><input type="text" name="soyisim" placeholder="Soyisim Giriniz" autocomplete="false" ></td> </tr> <!-- autocomplate false ile browserda hatırlamayı kapatabiliriz -->
+			<!--<tr><td>Yaş</td>
+				<td>:</td>
+				<td><input type="number" name="yas" placeholder="Yaş Giriniz"></td> </tr>-->
+			<tr><td>Tc No</td>
+				<td>:</td>
+				<td><input type="text" name="tcno" minlength="11"  maxlength="11" placeholder="Tc Giriniz" required="" onkeypress='return event.charCode>=48 && event.charCode <=57 ' ></td> </tr><!--requaried zorunlu alan--> <!--onkeypress='return event.charCode>=48 && event.charCode <=57 ile javascript kodalrı ile askiden kısıtama yaotk ve sadece sayı girilebilir yaptık-->
+			<tr><td>Cep Telefonu</td>
+				<td>:</td>
+				<td><input type="tel" name="tel" minlength="10"  maxlength="10" placeholder="Tel No Giriniz" required="" onkeypress='return event.charCode>=48 && event.charCode <=57 ' ></td> </tr>
+			<tr><td>E-Mail</td>
+				<td>:</td>
+				<td><input type="email" name="email" placeholder="E-mail Giriniz" size="20" required=""></td> </tr>
+			<tr><td>Şifre</td>
+				<td>:</td>
+				<td><input type="password" name="sifre" placeholder="Şifre Giriniz"></td> </tr>
+			<tr><td>Şifre (Tekrar)</td>
+				<td>:</td>
+				<td><input type="password" name="sifre" placeholder="Şifreyi Tekrar Giriniz"></td> </tr>
+			<tr><td>Doğum Tarihi</td>
+				<td>:</td>
+				<td><input type="date" name="tarih" style="width:160px" ></td> </tr>	
+			<tr><td>Doğum Yeri</td>
+				<td>:</td>
+				<td><select>
+						<option>İstanbul</option>
+						<option>Ankara</option>
+						<option>Konya</option>
+						<option>Denizli</option>
+						<option selected="">İzmir</option>
+						</select></td>
+			<tr><td>Cinsiyet</td>
+				<td>:</td>
+				<td><input type="radio" name="cins" style="font-size:25px">Erkek
+					<input type="radio" name="cins">Kadın</td></tr>
+			<tr><td>Eğitim Durumu</td>
+				<td>:</td>
+				<td><select>
+						<option>Üniversite</option><option>Lise</option><option>Ortaokul</option><option>İlkokul</option>
+						</select></td>
+			<tr><td>Hobiler</td>
+				<td>:</td>
+				<td>
+					<table>
+						<tr><td><input type="checkbox" name="bx1">Oyun Oynamak</td></tr>
+						<tr><td><input type="checkbox" name="bx2">Film İzlemek</td></tr>
+						<tr><td><input type="checkbox" name="bx3">Spor Yapmak</td></tr>
+					</table></td> </tr>
+			
+			<tr><td>Cv</td>
+				<td>:</td>
+				<td><input type="file" name="dosya" multiple=""></td> </tr>
+			<tr><td>Kısaca</td>
+				<td>:</td>
+				<td><textarea rows="3" cols="30"> </textarea></td> </tr>
+			<tr><td colspan="3" align="center">
+					<input type="submit" name="Kayıt" value="Kaydet">
+					<input type="reset" name="">
+			</td> </tr>
+
+			<tr><td colspan="3" align="center" ><a href="https://www.youtube.com/watch?v=cvh0nX08nRw" target="_blanck" style="color: rgba(0, 200, 82, 1.0); " >Diğer İlanlarımız İçin Tıklayınız</a></td></tr>
+		</table>
+		</td></tr>
+		</table>
+
+
+<!--<select>
+	<option>Erkek</option>
+	<option>Kadın</option>
+</select> -->
+
+
+</form>
+</body>
+</html>
